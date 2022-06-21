@@ -1,0 +1,120 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#conteneur{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 90vw; */
+    width: 100%;
+    margin: auto;
+}
+.element {
+    padding: 15px;
+}
+.element:nth-child(1){
+    background-color: rgb(42, 41, 56);
+    /* width: 20vw; */
+    color: white;
+    width: 275px;
+}
+.element:nth-child(2){
+    background-color: rgb(248, 248, 248);
+    /* width: 70vw; */
+    color: black;
+    width: calc(100% - 335px);
+
+}
+.img{
+    width: 15vw;
+    margin: auto;
+    display: flex;
+}
+h1{
+    margin-block-start: 0;
+    margin-block-end: 0.2em;
+}
+h2{
+    margin-block-start: 0;
+    margin-block-end: 0.2em;
+}
+h3{
+    margin-block-start: 0.35em;
+    margin-block-end: 0em;
+}
+h4{
+    margin-block-start: 0;
+    margin-block-end: 0.2em;
+}
+h5{
+    margin-block-start: 0;
+    margin-block-end: 0.55em;
+}
+.right-title{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+.timeline{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.tl-title{
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: #002333;
+    text-transform: uppercase;
+}
+.tl-title-2{
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.tl-content{
+    border-left: 1px solid #ccc;
+    padding-left: 2rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.tl-title-2::before{
+    content: "";
+    position: absolute;
+    width: .7rem;
+    height: .7rem;
+    background-color: #000;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    left: 0;
+}
+.sub-para{
+    color: #ccc;
+    padding: .4rem 0;
+}
+.para{
+    line-height: 1.6rem;
+    color: #718096;
+    font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+    .main{
+        width: 100%;
+    }
+    #conteneur{
+        flex-direction: column;
+    }
+    .element:nth-child(1), .element:nth-child(2), .element{
+        width: 100%;
+    }
+    
+}
