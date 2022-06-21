@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 .main{
     width: 80%;
@@ -57,8 +58,7 @@ h5{
 }
 .right-title{
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #000;
+    color: black;
     margin-bottom: 1.2rem;
     position: relative;
 }
@@ -69,52 +69,20 @@ h5{
 .tl-title{
     letter-spacing: 1px;
     font-size: 1rem;
-    color: #002333;
-    text-transform: uppercase;
+    color: black
 }
 .tl-title-2{
     letter-spacing: 1px;
     font-size: 1rem;
-    color: #000;
-    text-transform: uppercase;
+    color: black
 }
 
-.tl-content{
-    border-left: 1px solid #ccc;
-    padding-left: 2rem;
-    position: relative;
-    padding-bottom: 2rem;
-}
-
-.tl-title-2::before{
-    content: "";
-    position: absolute;
-    width: .7rem;
-    height: .7rem;
-    background-color: #000;
-    border-radius: 50%;
-    transform: translateX(-50%);
-    left: 0;
-}
 .sub-para{
-    color: #ccc;
+    color: black
     padding: .4rem 0;
 }
 .para{
     line-height: 1.6rem;
-    color: #718096;
+    color: black
     font-size: 1rem;
-}
-
-@media (max-width: 800px) {
-    .main{
-        width: 100%;
-    }
-    #conteneur{
-        flex-direction: column;
-    }
-    .element:nth-child(1), .element:nth-child(2), .element{
-        width: 100%;
-    }
-    
 }
